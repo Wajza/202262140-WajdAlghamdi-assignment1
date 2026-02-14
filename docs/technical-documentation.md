@@ -55,7 +55,7 @@ A responsive personal portfolio website built with vanilla HTML, CSS, and JavaSc
 
 ---
 
-##   File Structure
+## File Structure
 
 | Directory | File | Description |
 |-----------|------|-------------|
@@ -72,12 +72,11 @@ A responsive personal portfolio website built with vanilla HTML, CSS, and JavaSc
 
 ---
 
-##  Component Documentation
+## Component Documentation
 
 1. Navigation Component (File Location: index.html (lines 18-46) | styles.css (lines 84-170) | script.js (lines 38-108)):
 
 - HTML:
-
 ```html
 <!--
 <nav class="navbar">
@@ -102,158 +101,6 @@ A responsive personal portfolio website built with vanilla HTML, CSS, and JavaSc
         </div>
     </div>
 </nav>
--->
-
-- CSS Properties:
-
-| Selector | Properties | Purpose |
-|----------|------------|---------|
-| .navbar | position: fixed; top: 0; z-index: 1000; | Fixed header |
-| .nav-menu | display: flex; gap: 2rem; | Desktop layout |
-| .hamburger | display: none; | Hidden on desktop |
-| .nav-menu.active | left: 0; | Mobile menu open |
-
-- JavaScript Methods:
-
-  /*
-  function initMobileMenu() {
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
-    
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-        document.body.classList.toggle('menu-open');
-    });
-}
-*/
-
-
-2. Hero Section (File Location: index.html (lines 48-67) | styles.css (lines 173-239) | script.js (lines 142-176)):
-
-- HTML:
-
-<!--
-<section id="home" class="hero">
-    <div class="hero-content">
-        <h1>Hi, I'm <span class="highlight">Wajd Alghamdi</span></h1>
-        <p class="tagline">Software Engineer | Problem Solver | Tech Enthusiast</p>
-        <div class="greeting-message" id="greeting"></div>
-        <div class="hero-buttons">
-            <a href="#projects" class="cta-button">View My Work</a>
-            <a href="#contact" class="cta-button secondary">Get In Touch</a>
-        </div>
-    </div>
-    <div class="hero-scroll">
-        <a href="#about"><i class="fas fa-chevron-down"></i></a>
-    </div>
-</section>
--->
-
-- Greeting Message Logic:
-
-/*
-function initGreetingMessage() {
-    const hour = new Date().getHours();
-    let greeting = hour < 12 ? "Good morning" : 
-                   hour < 18 ? "Good afternoon" : "Good evening";
-    
-    document.getElementById('greeting').textContent = 
-        `${greeting}! I'm Wajd, a Software Engineer.`;
-}
-*/
-
-3. Skills Section (File Location: index.html (lines 107-192) | styles.css (lines 305-355) | script.js (lines 269-290)):
-
-- HTML:
-
-<!--
-<div class="skills-category">
-    <h3>Frontend Development</h3>
-    <div class="skills-grid">
-        <div class="skill-item">
-            <i class="fab fa-html5"></i>
-            <span>HTML5</span>
-            <div class="skill-level" data-level="90%"></div>
-        </div>
-        <div class="skill-item">
-            <i class="fab fa-css3-alt"></i>
-            <span>CSS3</span>
-            <div class="skill-level" data-level="85%"></div>
-        </div>
-    </div>
-</div>
--->
-
-- Intersection Observer Implementation:
-
-/*
-function initSkillLevels() {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.width = entry.target.dataset.level;
-            }
-        });
-    }, { threshold: 0.5 });
-    
-    document.querySelectorAll('.skill-level').forEach(skill => {
-        observer.observe(skill);
-    });
-}
-*/
-
-4. Projects Section (File Location: index.html (lines 194-256) | styles.css (lines 358-419) | script.js (lines 315-346)):
-
-- Filter Function Implementation:
-
-/*
-function initProjectFilters() {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const projects = document.querySelectorAll('.project-card');
-    
-    filterButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            filterButtons.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            
-            const filter = btn.dataset.filter;
-            
-            projects.forEach(project => {
-                if (filter === 'all' || project.dataset.category === filter) {
-                    project.style.display = 'block';
-                } else {
-                    project.style.display = 'none';
-                }
-            });
-        });
-    });
-}
-*/
-
-5. Contact Form Component (File Location: index.html (lines 258-335) | styles.css (lines 422-539) | script.js (lines 179-247)):
-
-- HTML:
-
-<!--
-<form class="contact-form" id="contactForm">
-    <div class="form-group">
-        <label for="name">Name <span class="required">*</span></label>
-        <input type="text" id="name" required>
-        <div class="error-message"></div>
-    </div>
-    <div class="form-group">
-        <label for="email">Email <span class="required">*</span></label>
-        <input type="email" id="email" required>
-        <div class="error-message"></div>
-    </div>
-    <div class="form-group">
-        <label for="message">Message <span class="required">*</span></label>
-        <textarea id="message" rows="5" required></textarea>
-        <div class="error-message"></div>
-    </div>
-    <button type="submit" class="submit-btn">Send Message</button>
-</form>
 -->
 
 - Validation Rules:
@@ -353,13 +200,16 @@ function initProjectFilters() {
 
 ##  Accessibility Features
 
+<!-- ARIA Labels -->
 <!--
 <nav aria-label="Main navigation">
 <button aria-label="Toggle menu">
 -->
 
+<!-- Keyboard Navigation -->
 /*
 :focus-visible { outline: 2px solid blue; }
+<!-- Reduced Motion -->
 @media (prefers-reduced-motion: reduce) {
     * { animation-duration: 0.01ms !important; }
 }
