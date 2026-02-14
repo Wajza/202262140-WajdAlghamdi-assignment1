@@ -75,22 +75,18 @@ EXTERNAL RESOURCES:
 
 ##   File Structure
 
-• 202262140-wajd-alghamdi-assignment1/
-  • README.md
-  • index.html
-  • css/
-    • styles.css
-  • js/
-    • script.js
-  • assets/
-    • images/
-      • PFP.png
-      • KSIH.png
-      • EBS.png
-      • KE.png
-  • docs/
-    • ai-usage-report.md
-    • technical-documentation.md
+| Directory | File | Description |
+|-----------|------|-------------|
+| / | README.md | Project overview and setup instructions |
+| / | index.html | Main entry point / Homepage |
+| /css/ | styles.css | All styling and themes |
+| /js/ | script.js | All JavaScript functionality |
+| /assets/images/ | PFP.png | Profile picture |
+| /assets/images/ | KSIH.png | KFUPM Student Impact Hub project image |
+| /assets/images/ | EBS.png | Event Booking System project image |
+| /assets/images/ | KE.png | KFUPM Events project image |
+| /docs/ | ai-usage-report.md | AI usage documentation |
+| /docs/ | technical-documentation.md | Technical documentation |
 
 ---
 
@@ -125,11 +121,12 @@ EXTERNAL RESOURCES:
 
 - CSS Properties:
 
-Selector | Properties | Purpose
-.navbar | position: fixed; top: 0; z-index: 1000; | Fixed header
-.nav-menu |	display: flex; gap: 2rem; |	Desktop layout
-.hamburger | display: none; | Hidden on desktop
-.nav-menu.active| left: 0; | Mobile menu open
+| Selector | Properties | Purpose |
+|----------|------------|---------|
+| .navbar | position: fixed; top: 0; z-index: 1000; | Fixed header |
+| .nav-menu | display: flex; gap: 2rem; | Desktop layout |
+| .hamburger | display: none; | Hidden on desktop |
+| .nav-menu.active | left: 0; | Mobile menu open |
 
 - JavaScript Methods:
 
@@ -261,10 +258,11 @@ function initProjectFilters() {
 
 - Validation Rules:
 
-Field | Validation | Error Message
-Name | Min 2 characters | "Please enter a valid name"
-Email  | Regex pattern | "Please enter a valid email"
-Message | 10-1000 characters | "Message must be 10-1000 characters"
+| Field | Validation | Error Message |
+|-------|------------|---------------|
+| Name | Min 2 characters | "Please enter a valid name" |
+| Email | Regex pattern | "Please enter a valid email" |
+| Message | 10-1000 characters | "Message must be 10-1000 characters" |
 
 ---
 
@@ -272,24 +270,26 @@ Message | 10-1000 characters | "Message must be 10-1000 characters"
 
 1. Core Initialization Functions:
 
-Function| Purpose | Line
-initThemeToggle() | Dark/light theme switching | 38
-initMobileMenu() | Hamburger menu functionality | 68
-initSmoothScroll() | Smooth anchor scrolling | 110
-initGreetingMessage() | Time-based greeting | 125
-initContactForm()  | Form handling | 150
-initScrollSpy() | Active nav highlighting | 210
-initBackToTop() | Back to top button | 230
-initSkillLevels() | Skill bar animations | 250
-initProjectFilters() | Project filtering | 315
+| Function | Purpose | Line |
+|----------|---------|------|
+| initThemeToggle() | Dark/light theme switching | 38 |
+| initMobileMenu() | Hamburger menu functionality | 68 |
+| initSmoothScroll() | Smooth anchor scrolling | 110 |
+| initGreetingMessage() | Time-based greeting | 125 |
+| initContactForm() | Form handling | 150 |
+| initScrollSpy() | Active nav highlighting | 210 |
+| initBackToTop() | Back to top button | 230 |
+| initSkillLevels() | Skill bar animations | 250 |
+| initProjectFilters() | Project filtering | 315 |
 
 2. Utility Functions:
 
-Function| Purpose | Parameters
-showFieldError() | Display field error | (fieldId, message)
-showNotification() | Display popup message | (message, type)
-validateForm() | Form validation | (data)
-debounce() | Performance optimization | (func, wait)
+| Function | Purpose | Parameters |
+|----------|---------|------------|
+| showFieldError() | Display field error | (fieldId, message) |
+| showNotification() | Display popup message | (message, type) |
+| validateForm() | Form validation | (data) |
+| debounce() | Performance optimization | (func, wait) |
 
 ---
 
@@ -368,15 +368,16 @@ debounce() | Performance optimization | (func, wait)
 
 - Common Issues and Solutions:
 
-Issue | Solution
-Images not loading | Check paths in assets/images/ folder
-Theme not persisting | Enable localStorage in browser
-Mobile menu not working | Check console for JavaScript errors
-Form validation not showing | Add .error-message div after inputs
+| Issue | Solution |
+|-------|----------|
+| Images not loading | Check paths in assets/images/ folder |
+| Theme not persisting | Enable localStorage in browser |
+| Mobile menu not working | Check console for JavaScript errors |
+| Form validation not showing | Add .error-message div after inputs |
 
 ---
 
 ##  References
 
 1. Font Awesome
-2. Google Fonts `
+2. Google Fonts 
