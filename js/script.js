@@ -1,7 +1,38 @@
 /**
- * Wajd Alghamdi - Software Engineer Portfolio
- * JavaScript functionality for interactive features
- * Version: 2.0
+ * ========================================================
+ * AI DECLARATION - JAVASCRIPT FUNCTIONALITY
+ * ========================================================
+ * 
+ * This JavaScript file was developed with assistance from 
+ * ChatGPT and then manually customized, tested, 
+ * and improved by Wajd Alghamdi
+ * 
+ * 
+ * Modifications and enhancements made:
+ * - Added comprehensive error handling for all functions
+ * - Fixed mobile menu display issues with proper event handling
+ * - Enhanced form validation with real-time feedback
+ * - Added loading states for better UX
+ * - Implemented proper theme persistence with localStorage
+ * - Added network status detection (online/offline)
+ * - Added keyboard accessibility (Escape key to close menu)
+ * - Added swipe gestures for mobile menu
+ * - Optimized performance with debouncing
+ * - Added proper ARIA attributes for accessibility
+ * - Customized all greeting messages with my information
+ * 
+ * Technical concepts learned and applied:
+ * - Intersection Observer for scroll animations
+ * - LocalStorage API for theme persistence
+ * - Form validation with regex patterns
+ * - Async/await for form submission simulation
+ * - Event delegation for dynamic elements
+ * - CSS animations with JavaScript triggers
+ * 
+ * I have reviewed, tested, and understand every function
+ * in this file. AI was used as a learning tool to understand
+ * JavaScript patterns and best practices.
+ * ========================================================
  */
 
 // Wait for DOM to load
