@@ -77,6 +77,7 @@ A responsive personal portfolio website built with vanilla HTML, CSS, and JavaSc
 1. Navigation Component (File Location: index.html (lines 18-46) | styles.css (lines 84-170) | script.js (lines 38-108)):
 
 - HTML:
+```html
 <!--
 <nav class="navbar">
     <div class="nav-container">
@@ -101,8 +102,9 @@ A responsive personal portfolio website built with vanilla HTML, CSS, and JavaSc
     </div>
 </nav>
 -->
+```
 
-- Validation Rules: 
+- Validation Rules:
 
 | Field | Validation | Error Message |
 |-------|------------|---------------|
@@ -143,6 +145,7 @@ A responsive personal portfolio website built with vanilla HTML, CSS, and JavaSc
 
 1. CSS Variables:
 
+```css
 /*
 :root {
     --primary-color: #2563eb;
@@ -159,9 +162,11 @@ A responsive personal portfolio website built with vanilla HTML, CSS, and JavaSc
     --bg-color: #111827;
 }
 */
+```
 
 2. Grid Layouts:
 
+```css
 /*
 .projects-grid {
     display: grid;
@@ -169,9 +174,11 @@ A responsive personal portfolio website built with vanilla HTML, CSS, and JavaSc
     gap: 2rem;
 }
 */
+```
 
 3. Animation Keyframes:
 
+```css
 /*
 @keyframes fadeInUp {
     from {
@@ -184,28 +191,31 @@ A responsive personal portfolio website built with vanilla HTML, CSS, and JavaSc
     }
 }
 */
-
+```
 ---
 
 ##  Performance Optimization
-
+```html
 <!--
 <img loading="lazy" src="image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="fonts.css" media="print" onload="this.media='all'">
 -->
-
+```
 ---
 
 ##  Accessibility Features
 
+```html
 <!-- ARIA Labels -->
 <!--
 <nav aria-label="Main navigation">
 <button aria-label="Toggle menu">
 -->
+```
 
 <!-- Keyboard Navigation -->
+```css
 /*
 :focus-visible { outline: 2px solid blue; }
 <!-- Reduced Motion -->
@@ -213,7 +223,7 @@ A responsive personal portfolio website built with vanilla HTML, CSS, and JavaSc
     * { animation-duration: 0.01ms !important; }
 }
 */
-
+```
 ---
 
 ##  Troubleshooting Guide
