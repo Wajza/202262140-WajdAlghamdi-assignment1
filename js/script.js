@@ -22,7 +22,28 @@ document.addEventListener('DOMContentLoaded', function() {
     initProjectFilters();
     initFormValidation();
     initLazyLoading();
+    
+    // Add shake animation style if not exists
+    addShakeAnimation();
 });
+
+/**
+ * Add shake animation to document
+ */
+function addShakeAnimation() {
+    if (!document.getElementById('shake-animation')) {
+        const style = document.createElement('style');
+        style.id = 'shake-animation';
+        style.textContent = `
+            @keyframes shake {
+                0%, 100% { transform: translateX(0); }
+                10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+                20%, 40%, 60%, 80% { transform: translateX(5px); }
+            }
+        `;
+        document.head.appendChild(style);
+    }
+}
 
 /**
  * Theme Toggle Functionality
@@ -137,8 +158,10 @@ function initMobileMenu() {
         
         if (!isActive) {
             body.style.overflow = 'hidden';
+            body.classList.add('menu-open');
         } else {
             body.style.overflow = '';
+            body.classList.remove('menu-open');
         }
     }
     
@@ -147,6 +170,7 @@ function initMobileMenu() {
         navMenu.classList.remove('active');
         hamburger.setAttribute('aria-expanded', 'false');
         body.style.overflow = '';
+        body.classList.remove('menu-open');
     }
     
     function handleSwipe() {
@@ -668,6 +692,7 @@ document.addEventListener('keydown', (e) => {
             hamburger.classList.remove('active');
             navMenu?.classList.remove('active');
             document.body.style.overflow = '';
+            document.body.classList.remove('menu-open');
         }
     }
 });
