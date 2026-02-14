@@ -1,44 +1,56 @@
-# 202262140-WajdAlghamdi-assignment1
+# Wajd Alghamdi - Software Engineer Portfolio
 
-# Personal Portfolio Website
+<div align="center">
+  
+  **Student ID: 202262140 | Assignment 1 - Foundation & AI Integration**
+  
+  *A responsive personal portfolio website built with HTML, CSS, and JavaScript*
+  
+</div>
 
-A responsive personal portfolio website built as part of Assignment 1 - Foundation & AI Integration. This project demonstrates modern web development practices, responsive design, and AI-assisted development.
+---
 
-## Live Demo
-[View Live Demo](https://your-username.github.io/id-name-assignment1) (Replace with your actual deployment link)
+## 📋 Project Description
 
-## Features
-- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
-- **Dark/Light Theme Toggle**: User preference saved in local storage
-- **Dynamic Greeting**: Time-based greeting message
-- **Smooth Scrolling**: Enhanced navigation experience
-- **Contact Form**: Client-side form validation with success/error messages
-- **Project Showcase**: Grid layout displaying portfolio projects
-- **Skills Section**: Interactive display of technical skills
-- **Mobile-Friendly Navigation**: Hamburger menu for smaller screens
+This is a personal portfolio website built as the starting point for my professional portfolio. The project demonstrates fundamental web development skills including semantic HTML, responsive CSS, and interactive JavaScript features.
 
+The portfolio includes:
+- **About Me section** with a professional introduction and profile image
+- **Projects showcase** featuring 3 of my software engineering projects
+- **Skills section** displaying technical competencies with animated progress bars
+- **Contact form** with client-side validation
+- **Responsive design** that works seamlessly on desktop, tablet, and mobile devices
+
+---
+
+## 🛠️ Setup Instructions (How to Run Locally)
+
+### Prerequisites
+- A modern web browser (Chrome, Firefox, Safari, Edge)
+- Git (cloning)
+
+### Method : Clone the Repository
+
+```bash
+# Clone the repository
+git clone https://github.com/Wajza/202262140-WajdAlghamdi-assignment1.git
+
+# Navigate into the project folder
+cd 202262140-wajd-alghamdi-assignment1
+
+# Open index.html in your browser
+start index.html
+
+---
 ## Technologies Used
 - HTML5
-- CSS3 (Flexbox & Grid)
-- JavaScript (ES6+)
+- CSS 
+- JavaScript 
 - Font Awesome Icons
 - Google Fonts
 
 ## AI Tools Used
 This project was developed with assistance from:
 - **ChatGPT**: Code generation, debugging, and documentation
-- **GitHub Copilot**: Code completion and suggestions
 
 For detailed AI usage documentation, see [docs/ai-usage-report.md](docs/ai-usage-report.md)
-
-## Setup Instructions
-
-### Prerequisites
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- Git (for cloning the repository)
-- Code editor (optional, for modifications)
-
-### Local Setup
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/id-name-assignment1.git
