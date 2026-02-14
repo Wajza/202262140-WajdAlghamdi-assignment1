@@ -2,17 +2,17 @@
 
 ---
 
-##  Introduction
+## Introduction
 
-Purpose:
+**Purpose:**
 This technical documentation provides a comprehensive overview of the Wajd Alghamdi Portfolio website. It is intended for developers who need to understand, maintain, or extend the codebase.
 
-Project Overview:
+**Project Overview:**
 A responsive personal portfolio website built with vanilla HTML, CSS, and JavaScript. The site showcases software engineering projects, technical skills, and provides a contact form for potential collaborators.
 
 ---
 
-##  Key Features
+## Key Features
 
 1. Semantic HTML5 structure
 2. CSS with Flexbox and Grid layouts
@@ -27,74 +27,70 @@ A responsive personal portfolio website built with vanilla HTML, CSS, and JavaSc
 
 ---
 
-##   System Architecture
+## System Architecture
 
-┌─────────────────────────────────────────────────────────────┐
-│                    CLIENT-SIDE APPLICATION                   │
-├─────────────────────────────────────────────────────────────┤
-│                                                              │
-│  ┌─────────────────┐                                        │
-│  │   index.html    │  Entry point - Semantic structure      │
-│  └────────┬────────┘                                        │
-│           │                                                  │
-│           ▼                                                  │
-│  ┌─────────────────────────────────────┐                    │
-│  │            CSS Layer                 │                    │
-│  ├─────────────────────────────────────┤                    │
-│  │  • styles.css                        │                    │
-│  │  • CSS Variables for theming          │                    │
-│  │  • Media Queries for responsiveness   │                    │
-│  │  • Animation keyframes                │                    │
-│  │  • Grid & Flexbox layouts             │                    │
-│  └─────────────────────────────────────┘                    │
-│           ▲                                                  │
-│           │                                                  │
-│  ┌─────────────────────────────────────┐                    │
-│  │         JavaScript Layer              │                    │
-│  ├─────────────────────────────────────┤                    │
-│  │  • script.js                         │                    │
-│  │  • DOM manipulation                   │                    │
-│  │  • Event handling                     │                    │
-│  │  • LocalStorage API                   │                    │
-│  │  • Intersection Observer              │                    │
-│  │  • Form validation                    │                    │
-│  └─────────────────────────────────────┘                    │
-│           ▲                                                  │
-│           │                                                  │
-│  ┌─────────────────────────────────────┐                    │
-│  │        External Resources             │                    │
-│  ├─────────────────────────────────────┤                    │
-│  │  • Font Awesome Icons                │                    │
-│  │  • Google Fonts (Poppins)            │                    │
-│  └─────────────────────────────────────┘                    │
-│                                                              │
-└─────────────────────────────────────────────────────────────┘
+
+==================================================
+     WAJD ALGHAMDI PORTFOLIO - ARCHITECTURE
+==================================================
+
+FRONTEND STACK:
+----------------
+📄 HTML5 (index.html)
+   ├─ Semantic structure
+   ├─ SEO-friendly tags
+   └─ ARIA accessibility
+
+🎨 CSS3 (styles.css)
+   ├─ CSS Variables (theming)
+   ├─ Flexbox & Grid layouts
+   ├─ Media queries (responsive)
+   └─ Keyframe animations
+
+⚡ JavaScript (script.js)
+   ├─ DOM manipulation
+   ├─ Event listeners
+   └─ Core functionality:
+       • Theme switching
+       • Mobile menu
+       • Form validation
+       • Project filtering
+       • Scroll animations
+
+BROWSER APIs USED:
+-------------------
+🔧 LocalStorage        - Theme persistence
+👁️ Intersection Observer - Skill animations
+🖱️  DOM API            - Element manipulation
+📜 History API         - Smooth navigation
+
+EXTERNAL RESOURCES:
+-------------------
+🔤 Google Fonts        - Poppins typography
+🎯 Font Awesome       - Icons library
+
+==================================================
 
 ---
 
 ##   File Structure
 
-202262140-wajd-alghamdi-assignment1/
-│
-├── README.md                      # Project documentation
-├── index.html                     # Main HTML file
-│
-├── css/
-│   └── styles.css                 # All styles
-│
-├── js/
-│   └── script.js                  # JavaScript functionality
-│
-├── assets/
-│   └── images/                    # Image assets
-│       ├── PFP.png                 # Profile picture
-│       ├── KSIH.png                 # KFUPM Student Impact Hub
-│       ├── EBS.png                  # Event Booking System
-│       └── KE.png                   # KFUPM Events
-│
-└── docs/
-    ├── ai-usage-report.md          # AI documentation
-    └── technical-documentation.md  # This file
+• 202262140-wajd-alghamdi-assignment1/
+  • README.md
+  • index.html
+  • css/
+    • styles.css
+  • js/
+    • script.js
+  • assets/
+    • images/
+      • PFP.png
+      • KSIH.png
+      • EBS.png
+      • KE.png
+  • docs/
+    • ai-usage-report.md
+    • technical-documentation.md
 
 ---
 
