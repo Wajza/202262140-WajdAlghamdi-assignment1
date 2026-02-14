@@ -29,47 +29,40 @@ A responsive personal portfolio website built with vanilla HTML, CSS, and JavaSc
 
 ## System Architecture
 
-
-==================================================
-     WAJD ALGHAMDI PORTFOLIO - ARCHITECTURE
-==================================================
-
-FRONTEND STACK:
-----------------
-📄 HTML5 (index.html)
-   ├─ Semantic structure
-   ├─ SEO-friendly tags
-   └─ ARIA accessibility
-
-🎨 CSS3 (styles.css)
-   ├─ CSS Variables (theming)
-   ├─ Flexbox & Grid layouts
-   ├─ Media queries (responsive)
-   └─ Keyframe animations
-
-⚡ JavaScript (script.js)
-   ├─ DOM manipulation
-   ├─ Event listeners
-   └─ Core functionality:
-       • Theme switching
-       • Mobile menu
-       • Form validation
-       • Project filtering
-       • Scroll animations
-
-BROWSER APIs USED:
--------------------
-🔧 LocalStorage        - Theme persistence
-👁️ Intersection Observer - Skill animations
-🖱️  DOM API            - Element manipulation
-📜 History API         - Smooth navigation
-
-EXTERNAL RESOURCES:
--------------------
-🔤 Google Fonts        - Poppins typography
-🎯 Font Awesome       - Icons library
-
-==================================================
+================================================================================
+| Category | Component/Technology | Features/Purpose                             |
+|==========|======================|==============================================|
+|          | 📄 HTML5             | • Semantic structure                         |
+| FRONTEND | (index.html)         | • SEO-friendly tags                          |
+| STACK    |                      | • ARIA accessibility                          |
+|----------|----------------------|----------------------------------------------|
+|          | 🎨 CSS3              | • CSS Variables (theming)                    |
+|          | (styles.css)         | • Flexbox & Grid layouts                      |
+|          |                      | • Media queries (responsive)                  |
+|          |                      | • Keyframe animations                         |
+|----------|----------------------|----------------------------------------------|
+|          | ⚡ JavaScript        | • DOM manipulation                            |
+|          | (script.js)          | • Event listeners                             |
+|          |                      | • Core functionality:                         |
+|          |                      |   - Theme switching                           |
+|          |                      |   - Mobile menu                               |
+|          |                      |   - Form validation                           |
+|          |                      |   - Project filtering                         |
+|          |                      |   - Scroll animations                         |
+|================================================================================|
+|          | 🔧 LocalStorage      | Theme persistence                             |
+| BROWSER  |----------------------|----------------------------------------------|
+| APIs     | 👁️ Intersection      | Skill animations                              |
+| USED     |    Observer          |                                              |
+|          |----------------------|----------------------------------------------|
+|          | 🖱️ DOM API           | Element manipulation                          |
+|          |----------------------|----------------------------------------------|
+|          | 📜 History API       | Smooth navigation                             |
+|================================================================================|
+| EXTERNAL | 🔤 Google Fonts      | Poppins typography                            |
+| RESOURCES|----------------------|----------------------------------------------|
+|          | 🎯 Font Awesome      | Icons library                                 |
+================================================================================
 
 ---
 
