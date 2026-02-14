@@ -88,7 +88,7 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="assets/images/PFP.png" 
+                    <img src="C:\Users\Admin\Desktop\202262140-WajdAlghamdi-assignment1\assets\PFP.png" 
                          alt="Wajd Alghamdi - Software Engineer" 
                          class="profile-img"
                          loading="lazy"
@@ -213,117 +213,86 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects" aria-label="Projects section">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            
-            <!-- Project filters (optional) -->
-            <div class="project-filters" aria-label="Project filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="frontend">Frontend</button>
-                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+<!-- Projects Section -->
+<section id="projects" class="projects" aria-label="Projects section">
+    <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        
+        <!-- Project filters (optional) -->
+        <div class="project-filters" aria-label="Project filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        </div>
+        
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card" data-category="frontend">
+                <div class="project-image">
+                    <img src="C:\Users\Admin\Desktop\202262140-WajdAlghamdi-assignment1\assets\KSIH.png" 
+                         alt="KFUPM Student Impact Hub project screenshot"
+                         loading="lazy"
+                         width="400"
+                         height="250">
+                    <div class="project-overlay">
+                        <span>Featured</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>KFUPM Student Impact Hub</h3>
+                    <p> A centralized platform designed to connect KFUPM students with volunteering opportunities, campus events, and community initiatives. The hub streamlines student engagement by providing a unified space for discovering activities, tracking impact hours, and collaborating on social projects.</p>
+                    <div class="project-tech">
+                        <span>Figma</span>
+                        <span>Frontend</span>
+                    </div>
+                </div>
             </div>
-            
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card" data-category="fullstack">
-                    <div class="project-image">
-                        <img src="assets/images/project1-placeholder.jpg" 
-                             alt="E-Commerce Platform project screenshot"
-                             loading="lazy"
-                             width="400"
-                             height="250">
-                        <div class="project-overlay">
-                            <span>Featured</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>E-Commerce Platform</h3>
-                        <p>A full-stack e-commerce solution with user authentication, product management, and payment integration. Built with React, Node.js, and MongoDB.</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                            <span>Stripe</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github" aria-hidden="true"></i> Code
-                            </a>
-                            <a href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-external-link-alt" aria-hidden="true"></i> Demo
-                            </a>
-                        </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" data-category="fullstack">
+                <div class="project-image">
+                    <img src="C:\Users\Admin\Desktop\202262140-WajdAlghamdi-assignment1\assets\EBS.png" 
+                         alt="Event Booking System screenshot"
+                         loading="lazy"
+                         width="400"
+                         height="250">
+                    <div class="project-overlay">
+                        <span>Popular</span>
                     </div>
                 </div>
-
-                <!-- Project 2 -->
-                <div class="project-card" data-category="fullstack">
-                    <div class="project-image">
-                        <img src="assets/images/project2-placeholder.jpg" 
-                             alt="TaskFlow project management tool screenshot"
-                             loading="lazy"
-                             width="400"
-                             height="250">
-                        <div class="project-overlay">
-                            <span>Popular</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>TaskFlow - Project Management</h3>
-                        <p>A collaborative project management tool with real-time updates, task assignments, and progress tracking. Features drag-and-drop functionality.</p>
-                        <div class="project-tech">
-                            <span>Vue.js</span>
-                            <span>Express</span>
-                            <span>Socket.io</span>
-                            <span>PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github" aria-hidden="true"></i> Code
-                            </a>
-                            <a href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-external-link-alt" aria-hidden="true"></i> Demo
-                            </a>
-                        </div>
+                <div class="project-info">
+                    <h3>Event Booking System</h3>
+                    <p>The Event Booking System is a simple JavaFX application designed to manage registration for various events that requires booking tickets. It allows users to book tickets, view available events, and view booked tickets. The system also provides administrative features for adding, updating, or deleting course events.</p>
+                    <div class="project-tech">
+                        <span>JavaFX</span>
+                        <span>Java</span>
                     </div>
                 </div>
+            </div>
 
-                <!-- Project 3 -->
-                <div class="project-card" data-category="frontend">
-                    <div class="project-image">
-                        <img src="assets/images/project3-placeholder.jpg" 
-                             alt="AI Image Generator project screenshot"
-                             loading="lazy"
-                             width="400"
-                             height="250">
-                        <div class="project-overlay">
-                            <span>New</span>
-                        </div>
+            <!-- Project 3 -->
+            <div class="project-card" data-category="frontend">
+                <div class="project-image">
+                    <img src="C:\Users\Admin\Desktop\202262140-WajdAlghamdi-assignment1\assets\KE.png" 
+                         alt="KFUPM Events screenshot"
+                         loading="lazy"
+                         width="400"
+                         height="250">
+                    <div class="project-overlay">
+                        <span>New</span>
                     </div>
-                    <div class="project-info">
-                        <h3>AI Image Generator</h3>
-                        <p>An AI-powered image generation application using OpenAI's DALL-E API. Users can generate unique images from text descriptions.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Flask</span>
-                            <span>OpenAI</span>
-                            <span>React</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github" aria-hidden="true"></i> Code
-                            </a>
-                            <a href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-external-link-alt" aria-hidden="true"></i> Demo
-                            </a>
-                        </div>
+                </div>
+                <div class="project-info">
+                    <h3>KFUPM Events</h3>
+                    <p>KFUPM Events is a Figma-designed UI/UX prototype for a campus event booking system that allows KFUPM students to browse and book tickets for university events like conferences, workshops, and cultural festivals.</p>
+                    <div class="project-tech">
+                        <span>Figma</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact" aria-label="Contact section">
