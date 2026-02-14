@@ -37,7 +37,7 @@ git clone https://github.com/Wajza/202262140-WajdAlghamdi-assignment1.git
 
 # Navigate into the project folder
 cd 202262140-wajd-alghamdi-assignment1
-
+```
 # Open index.html in your browser
 start index.html
 
