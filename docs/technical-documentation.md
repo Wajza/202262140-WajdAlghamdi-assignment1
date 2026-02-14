@@ -78,6 +78,8 @@ A responsive personal portfolio website built with vanilla HTML, CSS, and JavaSc
 
 - HTML:
 
+```html
+<!--
 <nav class="navbar">
     <div class="nav-container">
         <div class="logo">
@@ -100,6 +102,7 @@ A responsive personal portfolio website built with vanilla HTML, CSS, and JavaSc
         </div>
     </div>
 </nav>
+-->
 
 - CSS Properties:
 
@@ -112,6 +115,7 @@ A responsive personal portfolio website built with vanilla HTML, CSS, and JavaSc
 
 - JavaScript Methods:
 
+  /*
   function initMobileMenu() {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
@@ -122,11 +126,14 @@ A responsive personal portfolio website built with vanilla HTML, CSS, and JavaSc
         document.body.classList.toggle('menu-open');
     });
 }
+*/
+
 
 2. Hero Section (File Location: index.html (lines 48-67) | styles.css (lines 173-239) | script.js (lines 142-176)):
 
 - HTML:
 
+<!--
 <section id="home" class="hero">
     <div class="hero-content">
         <h1>Hi, I'm <span class="highlight">Wajd Alghamdi</span></h1>
@@ -141,9 +148,11 @@ A responsive personal portfolio website built with vanilla HTML, CSS, and JavaSc
         <a href="#about"><i class="fas fa-chevron-down"></i></a>
     </div>
 </section>
+-->
 
 - Greeting Message Logic:
 
+/*
 function initGreetingMessage() {
     const hour = new Date().getHours();
     let greeting = hour < 12 ? "Good morning" : 
@@ -152,11 +161,13 @@ function initGreetingMessage() {
     document.getElementById('greeting').textContent = 
         `${greeting}! I'm Wajd, a Software Engineer.`;
 }
+*/
 
 3. Skills Section (File Location: index.html (lines 107-192) | styles.css (lines 305-355) | script.js (lines 269-290)):
 
 - HTML:
 
+<!--
 <div class="skills-category">
     <h3>Frontend Development</h3>
     <div class="skills-grid">
@@ -172,9 +183,11 @@ function initGreetingMessage() {
         </div>
     </div>
 </div>
+-->
 
 - Intersection Observer Implementation:
 
+/*
 function initSkillLevels() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -188,11 +201,13 @@ function initSkillLevels() {
         observer.observe(skill);
     });
 }
+*/
 
 4. Projects Section (File Location: index.html (lines 194-256) | styles.css (lines 358-419) | script.js (lines 315-346)):
 
 - Filter Function Implementation:
 
+/*
 function initProjectFilters() {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projects = document.querySelectorAll('.project-card');
@@ -214,11 +229,13 @@ function initProjectFilters() {
         });
     });
 }
+*/
 
 5. Contact Form Component (File Location: index.html (lines 258-335) | styles.css (lines 422-539) | script.js (lines 179-247)):
 
 - HTML:
 
+<!--
 <form class="contact-form" id="contactForm">
     <div class="form-group">
         <label for="name">Name <span class="required">*</span></label>
@@ -237,6 +254,7 @@ function initProjectFilters() {
     </div>
     <button type="submit" class="submit-btn">Send Message</button>
 </form>
+-->
 
 - Validation Rules:
 
@@ -278,8 +296,9 @@ function initProjectFilters() {
 ##  CSS Architecture
 
 1. CSS Variables:
+
+/*
 :root {
-    /* Light Theme */
     --primary-color: #2563eb;
     --text-color: #1f2937;
     --bg-color: #ffffff;
@@ -293,17 +312,21 @@ function initProjectFilters() {
     --text-color: #f3f4f6;
     --bg-color: #111827;
 }
+*/
 
 2. Grid Layouts:
 
+/*
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
+*/
 
 3. Animation Keyframes:
 
+/*
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -314,35 +337,38 @@ function initProjectFilters() {
         transform: translateY(0);
     }
 }
+*/
 
 ---
 
 ##  Performance Optimization
 
-<!-- Lazy loading -->
+<!--
 <img loading="lazy" src="image.jpg">
-
-<!-- Preconnect to external domains -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
-<!-- Deferred font loading -->
 <link rel="stylesheet" href="fonts.css" media="print" onload="this.media='all'">
+-->
 
 ---
 
 ##  Accessibility Features
 
+
+
 <!-- ARIA Labels -->
+<!--
 <nav aria-label="Main navigation">
 <button aria-label="Toggle menu">
+-->
 
 <!-- Keyboard Navigation -->
+/*
 :focus-visible { outline: 2px solid blue; }
-
 <!-- Reduced Motion -->
 @media (prefers-reduced-motion: reduce) {
     * { animation-duration: 0.01ms !important; }
 }
+*/
 
 ---
 
