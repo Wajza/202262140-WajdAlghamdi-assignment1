@@ -1,10 +1,3 @@
-/**
- * Wajd Alghamdi - Software Engineer Portfolio
- * JavaScript functionality for interactive features
- * Author: Wajd Alghamdi
- * Date: 2024
- */
-
 // Wait for DOM to load
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Portfolio loaded successfully!');
@@ -701,3 +694,95 @@ style.textContent = `
 `;
 
 document.head.appendChild(style);
+
+/**
+ * Mobile Menu Functionality
+ * Handles hamburger menu for mobile devices
+ */
+function initMobileMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const body = document.body;
+    
+    if (!hamburger || !navMenu) return;
+    
+    // Toggle menu
+    hamburger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        
+        // Prevent body scroll when menu is open
+        if (navMenu.classList.contains('active')) {
+            body.classList.add('menu-open');
+            body.style.overflow = 'hidden';
+        } else {
+            body.classList.remove('menu-open');
+            body.style.overflow = '';
+        }
+    });
+    
+    // Close menu when clicking a link
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            body.classList.remove('menu-open');
+            body.style.overflow = '';
+        });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            body.classList.remove('menu-open');
+            body.style.overflow = '';
+        }
+    });
+    
+    // Close menu on window resize
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            body.classList.remove('menu-open');
+            body.style.overflow = '';
+        }
+    });
+    
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    document.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+    
+    document.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    });
+    
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        const swipeDistance = touchEndX - touchStartX;
+        
+        // Swipe right to open menu (if on left edge)
+        if (swipeDistance > swipeThreshold && touchStartX < 30 && !navMenu.classList.contains('active')) {
+            hamburger.classList.add('active');
+            navMenu.classList.add('active');
+            body.classList.add('menu-open');
+            body.style.overflow = 'hidden';
+        }
+        
+        // Swipe left to close menu
+        if (swipeDistance < -swipeThreshold && navMenu.classList.contains('active')) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            body.classList.remove('menu-open');
+            body.style.overflow = '';
+        }
+    }
+}
