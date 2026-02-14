@@ -77,7 +77,6 @@ A responsive personal portfolio website built with vanilla HTML, CSS, and JavaSc
 1. Navigation Component (File Location: index.html (lines 18-46) | styles.css (lines 84-170) | script.js (lines 38-108)):
 
 - HTML:
-```html
 <!--
 <nav class="navbar">
     <div class="nav-container">
@@ -103,7 +102,7 @@ A responsive personal portfolio website built with vanilla HTML, CSS, and JavaSc
 </nav>
 -->
 
-- Validation Rules:
+- Validation Rules: 
 
 | Field | Validation | Error Message |
 |-------|------------|---------------|
