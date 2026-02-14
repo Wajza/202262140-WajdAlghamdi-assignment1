@@ -383,4 +383,4 @@ Form validation not showing | Add .error-message div after inputs
 ##  References
 
 1. Font Awesome
-2. Google Fonts
+2. Google Fonts `
