@@ -214,11 +214,10 @@ A responsive personal portfolio website built with vanilla HTML, CSS, and JavaSc
 -->
 ```
 
-<!-- Keyboard Navigation -->
+
 ```css
 /*
 :focus-visible { outline: 2px solid blue; }
-<!-- Reduced Motion -->
 @media (prefers-reduced-motion: reduce) {
     * { animation-duration: 0.01ms !important; }
 }
