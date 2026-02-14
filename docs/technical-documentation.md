@@ -353,18 +353,13 @@ function initProjectFilters() {
 
 ##  Accessibility Features
 
-
-
-<!-- ARIA Labels -->
 <!--
 <nav aria-label="Main navigation">
 <button aria-label="Toggle menu">
 -->
 
-<!-- Keyboard Navigation -->
 /*
 :focus-visible { outline: 2px solid blue; }
-<!-- Reduced Motion -->
 @media (prefers-reduced-motion: reduce) {
     * { animation-duration: 0.01ms !important; }
 }
