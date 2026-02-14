@@ -29,40 +29,29 @@ A responsive personal portfolio website built with vanilla HTML, CSS, and JavaSc
 
 ## System Architecture
 
-================================================================================
-| Category | Component/Technology | Features/Purpose                             |
-|==========|======================|==============================================|
-|          | 📄 HTML5             | • Semantic structure                         |
-| FRONTEND | (index.html)         | • SEO-friendly tags                          |
-| STACK    |                      | • ARIA accessibility                          |
-|----------|----------------------|----------------------------------------------|
-|          | 🎨 CSS3              | • CSS Variables (theming)                    |
-|          | (styles.css)         | • Flexbox & Grid layouts                      |
-|          |                      | • Media queries (responsive)                  |
-|          |                      | • Keyframe animations                         |
-|----------|----------------------|----------------------------------------------|
-|          | ⚡ JavaScript        | • DOM manipulation                            |
-|          | (script.js)          | • Event listeners                             |
-|          |                      | • Core functionality:                         |
-|          |                      |   - Theme switching                           |
-|          |                      |   - Mobile menu                               |
-|          |                      |   - Form validation                           |
-|          |                      |   - Project filtering                         |
-|          |                      |   - Scroll animations                         |
-|================================================================================|
-|          | 🔧 LocalStorage      | Theme persistence                             |
-| BROWSER  |----------------------|----------------------------------------------|
-| APIs     | 👁️ Intersection      | Skill animations                              |
-| USED     |    Observer          |                                              |
-|          |----------------------|----------------------------------------------|
-|          | 🖱️ DOM API           | Element manipulation                          |
-|          |----------------------|----------------------------------------------|
-|          | 📜 History API       | Smooth navigation                             |
-|================================================================================|
-| EXTERNAL | 🔤 Google Fonts      | Poppins typography                            |
-| RESOURCES|----------------------|----------------------------------------------|
-|          | 🎯 Font Awesome      | Icons library                                 |
-================================================================================
+-  Frontend Stack:
+
+| Layer | Technology | File | Key Features |
+|-------|------------|------|--------------|
+| 📄 Structure | HTML5 | index.html | • Semantic structure<br>• SEO-friendly tags<br>• ARIA accessibility |
+| 🎨 Styling | CSS3 | styles.css | • CSS Variables (theming)<br>• Flexbox & Grid layouts<br>• Media queries<br>• Keyframe animations |
+| ⚡ Functionality | JavaScript | script.js | • DOM manipulation<br>• Event listeners<br>• Theme switching<br>• Mobile menu<br>• Form validation<br>• Project filtering<br>• Scroll animations |
+
+- Browser APIs:
+
+| API | Icon | Function | Implementation |
+|-----|------|----------|----------------|
+| LocalStorage | 🔧 | Theme persistence | Saves user theme preference across sessions |
+| Intersection Observer | 👁️ | Skill animations | Triggers progress bars when scrolled into view |
+| DOM API | 🖱️ | Element manipulation | Selects and modifies page elements |
+| History API | 📜 | Smooth navigation | Handles anchor link scrolling |
+
+- External Resources:
+
+| Resource | Icon | Type | Usage |
+|----------|------|------|-------|
+| Google Fonts | 🔤 | Typography | Poppins font family for all text |
+| Font Awesome | 🎯 | Icons | UI icons for navigation, skills, and social links |
 
 ---
 
